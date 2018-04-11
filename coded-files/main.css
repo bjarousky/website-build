@@ -35,7 +35,7 @@ Defaults
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: var(--color4);
+  background: var(--color1);
 }
 
 /*
@@ -62,7 +62,7 @@ nav ul {
   height: 100vh;
   padding: 100px 0 100px 0;
   overflow: hidden;
-  background: var(--color3);
+  background: var(--color4);
 }
 
 nav ul li {
@@ -74,12 +74,6 @@ nav ul li {
   text-align: center;
   width: 100vw;
   justify-content: center;
-}
-
-.logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
 }
 
 .nav-items li a {
@@ -98,10 +92,35 @@ nav ul li {
   margin-left: 100%;
 }
 
-.nav-icon {
+.top-bar {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  background-color: var(--color4);
+  display: flex;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.myName {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  margin: auto;
+  display: inline-block;
+}
+
+.nav-icon {
+  position: relative;
+  float: right;
 }
 
 .icon-bar {
